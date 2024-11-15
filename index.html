@@ -1,94 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./hover.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./hover.css" />
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="flex items-center justify-between">
-            <div class="nav-links bold">
-                <div class="profile"><a href="#Home">Home</a></div>
-                <a href="#About">About</a>
-                <a href="#Projects">Projects</a>
-                <a href="#Contact">Contact</a>
-            </div>
-            <a href="resume.pdf" class="bold" download>Download CV</a>
-        </nav>
+      <nav class="flex items-center justify-between">
+        <div class="nav-links bold">
+          <div class="profile"><a href="#Home">Home</a></div>
+          <a href="#About">About</a>
+          <a href="#Projects">Projects</a>
+          <a href="#Contact">Contact</a>
+          <a href="resume.pdf" download>Download CV</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </nav>
     </header>
     <main>
-        <section id="Home" class="Home">
-            <h1>Hey there, I am Heran.</h1>
-            <p>A Software Engineer</p>
-        </section>
-        <section id="About" class="About">
-            <div class="about-container">
-                <div class="about-text">
-                    <h1>Introduction</h1>
-                </div>
-                <div class="content">
-                    <div class="paragraph">
-                        <h2>Overview</h2>
-                        <p>I am Heran Eshetu Elala, a dedicated and forward-thinking Software Engineering student at Addis Ababa University, currently involved in the A2SV (Africa to Silicon Valley) program backed by Google. My passion lies in leveraging technology to create innovative solutions. I am known for being hardworking, excelling in multitasking and critical thinking. As a technology enthusiast, I am constantly seeking opportunities for self-improvement and growth.</p>
-                        <p>My technical skills span across frontend development with HTML, CSS, JavaScript, and beginner-level ReactJS. In backend development, I am proficient in NestJS. I also have experience in mobile app development using Flutter with Riverpod and Bloc at a beginner level. Additionally, I have a strong foundation in networking essentials, cloud and virtualization, and network virtualization. My competitive programming skills include a deep understanding of data structures and algorithms, particularly using Python.</p>
-                        <p>Beyond my technical expertise, I possess strong communication and leadership skills. Effective communication is one of my core strengths. I am adept at conveying complex technical concepts in a clear and understandable manner, whether I am collaborating with teammates, presenting project ideas, or engaging with stakeholders. My ability to articulate ideas and listen actively ensures that I can contribute meaningfully to any team or project.</p>
-                        <p>In terms of leadership, I have a proven track record of leading teams and projects to successful completion. I thrive in environments where I can take the initiative, motivate my peers, and drive projects forward. My leadership style is collaborative and inclusive, fostering a sense of teamwork and shared purpose. I believe in empowering team members by recognizing their strengths and encouraging their contributions, which leads to a more dynamic and productive work environment.</p>
-                        <p>I am passionate about artificial intelligence, machine learning, music, and traveling. I believe in continuous learning and actively seek out opportunities to expand my knowledge and skills. I am always looking to collaborate and learn from others, aiming to make a significant impact in the field of software engineering. My goal is to leverage my skills and experiences to create innovative solutions that address real-world problems and contribute to the betterment of society.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="herica.jpg" alt="Heran's Picture">
-                    </div>
-                </div>
+      <section id="Home" class="Home">
+        <h1 class="hey center">Hey there, I am Heran.</h1>
+        <p>A Software Engineer</p>
+      </section>
+      <section id="About" class="About">
+        <div class="about-container">
+          <div class="about-text">
+            <h1>Introduction</h1>
+          </div>
+          <div class="content">
+            <div class="paragraph">
+              <h2>Overview</h2>
+              <p>
+                I am Heran Eshetu Elala, a dedicated and forward-thinking
+                Software Engineering student at Addis Ababa University,
+                currently involved in the A2SV (Africa to Silicon Valley)
+                program backed by Google. My passion lies in leveraging
+                technology to create innovative solutions. I am known for being
+                hardworking, excelling in multitasking and critical thinking. As
+                a technology enthusiast, I am constantly seeking opportunities
+                for self-improvement and growth.
+              </p>
+              <p>
+                My technical skills span across frontend development with HTML,
+                CSS, JavaScript, and beginner-level ReactJS. In backend
+                development, I am proficient in NestJS. I also have experience
+                in mobile app development using Flutter with Riverpod and Bloc
+                at a beginner level. Additionally, I have a strong foundation in
+                networking essentials, cloud and virtualization, and network
+                virtualization. My competitive programming skills include a deep
+                understanding of data structures and algorithms, particularly
+                using Python.
+              </p>
+              <p>
+                Beyond my technical expertise, I possess strong communication
+                and leadership skills. Effective communication is one of my core
+                strengths. I am adept at conveying complex technical concepts in
+                a clear and understandable manner, whether I am collaborating
+                with teammates, presenting project ideas, or engaging with
+                stakeholders. My ability to articulate ideas and listen actively
+                ensures that I can contribute meaningfully to any team or
+                project.
+              </p>
+              <p>
+                In terms of leadership, I have a proven track record of leading
+                teams and projects to successful completion. I thrive in
+                environments where I can take the initiative, motivate my peers,
+                and drive projects forward. My leadership style is collaborative
+                and inclusive, fostering a sense of teamwork and shared purpose.
+                I believe in empowering team members by recognizing their
+                strengths and encouraging their contributions, which leads to a
+                more dynamic and productive work environment.
+              </p>
+              <p>
+                I am passionate about artificial intelligence, machine learning,
+                music, and traveling. I believe in continuous learning and
+                actively seek out opportunities to expand my knowledge and
+                skills. I am always looking to collaborate and learn from
+                others, aiming to make a significant impact in the field of
+                software engineering. My goal is to leverage my skills and
+                experiences to create innovative solutions that address
+                real-world problems and contribute to the betterment of society.
+              </p>
             </div>
-        </section>
-        <section id="Projects">
-            <div class="project-title">
-                <h1>Projects I Have Done So Far</h1>
+            <div class="about-image">
+              <img src="herica.jpg" alt="Heran's Picture" />
             </div>
-            <div class="project-container">
-                <a href="https://github.com/HEran-ite/fultter-2024-poj-riverpod" class="project-box">
-                    <img src="bgc_hotel.jpeg" alt="Hotel Booking app" class="image-class">
-                    <h4>Hotel Booking app <span class="arrow-right">&#8594;</span></h4>
-                    <p>A flutter hotel booking application, providing users with the ability to book rooms and admins to manage room details. The project incorporates various features to enhance user experience and security. I have had extensive experience in backend development, integration, and UI design.</p>
-                </a>
-                <a href="https://heran-ite.github.io/restaurant-simple-web/" class="project-box">
-                    <img src="restaurant.jpeg" alt="Restaurant" class="image-class">
-                    <h4>Restaurant Simple web <span class="arrow-right">&#8594;</span></h4>
-                    <p>The frontend design project for the restaurant will involve creating a visually appealing and user-friendly interface for the restaurant's website. The website will consist of various pages such as the home page, menu page, reservation page, about us page, contact page, and possibly a gallery page showcasing the restaurant's ambiance and dishes. I have gained extensive experience in frontend development.</p>
-                </a>
-                <a href="https://github.com/HEran-ite/To-do-list" class="project-box">
-                    <img src="todo.webp" alt="todo" class="image-class">
-                    <h4>Todo List <span class="arrow-right">&#8594;</span></h4>
-                    <p>The application is a Flutter-based todo list that leverages Hive as its database, providing a seamless and efficient way to manage tasks with a lightweight and fast NoSQL database solution. It is my first Flutter app.</p>
-                </a>
-                <div class="project-box">
-                    <img src="hand_gesture.png" alt="documentation" class="image-class">
-                    <h4>Real-Time Hand Gesture Recognition System</h4>
-                    <p>The system is designed to recognize hand gestures in real-time using a webcam. It leverages machine learning and computer vision techniques to detect hand landmarks, preprocess the captured images, and classify them into predefined gesture categories.</p>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section id="Projects">
+        <div class="project-title">
+          <h1>Projects I Have Done So Far</h1>
+        </div>
+        <div class="project-container">
+          <a
+            href="https://github.com/HEran-ite/fultter-2024-poj-riverpod"
+            class="project-box"
+          >
+            <img
+              src="bgc_hotel.jpeg"
+              alt="Hotel Booking app"
+              class="image-class"
+            />
+            <h4>Hotel Booking app <span class="arrow-right">&#8594;</span></h4>
+            <p>
+              A flutter hotel booking application, providing users with the
+              ability to book rooms and admins to manage room details. The
+              project incorporates various features to enhance user experience
+              and security. I have had extensive experience in backend
+              development, integration, and UI design.
+            </p>
+          </a>
+          <a
+            href="https://heran-ite.github.io/restaurant-simple-web/"
+            class="project-box"
+          >
+            <img src="restaurant.jpeg" alt="Restaurant" class="image-class" />
+            <h4>
+              Restaurant Simple web <span class="arrow-right">&#8594;</span>
+            </h4>
+            <p>
+              The frontend design project for the restaurant will involve
+              creating a visually appealing and user-friendly interface for the
+              restaurant's website. The website will consist of various pages
+              such as the home page, menu page, reservation page, about us page,
+              contact page, and possibly a gallery page showcasing the
+              restaurant's ambiance and dishes. I have gained extensive
+              experience in frontend development.
+            </p>
+          </a>
+          <a href="https://github.com/HEran-ite/To-do-list" class="project-box">
+            <img src="todo.webp" alt="todo" class="image-class" />
+            <h4>Todo List <span class="arrow-right">&#8594;</span></h4>
+            <p>
+              The application is a Flutter-based todo list that leverages Hive
+              as its database, providing a seamless and efficient way to manage
+              tasks with a lightweight and fast NoSQL database solution. It is
+              my first Flutter app.
+            </p>
+          </a>
+          <div class="project-box">
+            <img
+              src="hand_gesture.png"
+              alt="documentation"
+              class="image-class"
+            />
+            <h4>Real-Time Hand Gesture Recognition System</h4>
+            <p>
+              The system is designed to recognize hand gestures in real-time
+              using a webcam. It leverages machine learning and computer vision
+              techniques to detect hand landmarks, preprocess the captured
+              images, and classify them into predefined gesture categories.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="Contact" class="Contact">
+        <div class="contact-card">
+          <h1>Contact me</h1>
+          <form action="https://formspree.io/f/xzzpplwj" method="POST">
+            <label for="name">Enter Your Name</label>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <label for="email">Enter Your Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <label for="message">Enter Message To Send</label>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div class="button-container">
+              <button type="submit">Send</button>
             </div>
-        </section>
-        <section id="Contact" class="Contact">
-            <div class="contact-card">
-                <h1>Contact me</h1>
-                <form action="https://formspree.io/f/xzzpplwj" method="POST">
-                    <label for="name">Enter Your Name</label>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <label for="email">Enter Your Email</label>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <label for="message">Enter Message To Send</label>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <div class="button-container">
-                        <button type="submit">Send</button>
-                    </div>
-                </form>
-            </div>
-        </section>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
